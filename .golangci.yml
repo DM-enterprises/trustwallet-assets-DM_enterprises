@@ -72,12 +72,12 @@ linters-settings:
       mnd:
         # the list of enabled checks, see https://github.com/tommy-muehle/go-mnd/#checks for description.
         checks:
-        - argument
-        - case
-        - condition
-        - operation
-        - return
-        - assign
+          - argument
+          - case
+          - condition
+          - operation
+          - return
+          - assign
         ignored-numbers: 10,1000
   gomoddirectives:
     replace-local: false
@@ -162,82 +162,4 @@ linters-settings:
     dot-import-whitelist:
       - fmt
     # https://staticcheck.io/docs/options#initialisms
-    initialisms: [ "ACL", "API", "ASCII", "CPU", "CSS", "DNS", "EOF", "GUID", "HTML", "HTTP", "HTTPS", "ID", "IP", "JSON", "QPS", "RAM", "RPC", "SLA", "SMTP", "SQL", "SSH", "TCP", "TLS", "TTL", "UDP", "UI", "GID", "UID", "UUID", "URI", "URL", "UTF8", "VM", "XML", "XMPP", "XSRF", "XSS" ]
-    # https://staticcheck.io/docs/options#http_status_code_whitelist
-    http-status-code-whitelist: [ "200", "400", "404", "500" ]
-  unused:
-    # Select the Go version to target
-    go: "1.18"
-  whitespace:
-    multi-if: true   # Enforces newlines (or comments) after every multi-line if statement
-    multi-func: false # Enforces newlines (or comments) after every multi-line function signature
-  wsl:
-    # See https://github.com/bombsimon/wsl/blob/master/doc/configuration.md for
-    # documentation of available settings
-    allow-assign-and-anything: false
-    allow-assign-and-call: true
-    allow-cuddle-declarations: false
-    allow-multiline-assign: true
-    allow-separated-leading-comment: false
-    allow-trailing-comment: false
-    force-case-trailing-whitespace: 0
-    force-err-cuddling: false
-    force-short-decl-cuddling: false
-    strict-append: true
-
-linters:
-  disable-all: true
-  enable:
-    - bodyclose
-    - deadcode
-    - depguard
-    - dogsled
-    - errcheck
-    - exportloopref
-    - exhaustive
-    - funlen
-    - gochecknoinits
-    - goconst
-    - gocritic
-    - gocyclo
-    - gofmt
-    - goimports
-    # - gomnd
-    - goprintffuncname
-    - gosec
-    - gosimple
-    - govet
-    - ineffassign
-    - lll
-    - misspell
-    - nakedret
-    - noctx
-    - nolintlint
-    - rowserrcheck
-    - staticcheck
-    - structcheck
-    - stylecheck
-    - typecheck
-    - unconvert
-    - unparam
-    - unused
-    - varcheck
-    - whitespace
-    - asciicheck
-    # - gochecknoglobals
-    - gocognit
-    - godot
-    # - godox
-    # - goerr113
-    # - nestif
-    - prealloc
-    # - revive
-    # - wsl
-
-output:
-  format: colored-line-number
-  print-issued-lines: true
-  print-linter-name: true
-  uniq-by-line: true
-  path-prefix: ""
-  sort-results: true
+    initialisms: [ "ACL", "API", "ASCII", "CPU", "CSS", "DNS
