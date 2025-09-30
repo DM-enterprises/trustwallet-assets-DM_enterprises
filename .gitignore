@@ -1,8 +1,51 @@
-**/.DS_Store
-.idea
+# -----------------------------------------------------------------------------
+# OS/System Files
+# -----------------------------------------------------------------------------
+.DS_Store             # macOS
+Thumbs.db             # Windows
+.Spotlight-V100       # macOS
+.Trashes              # macOS
+
+# -----------------------------------------------------------------------------
+# Dependency Directories
+# -----------------------------------------------------------------------------
+/node_modules         # Node.js/JavaScript dependencies
+/vendor               # Go/PHP/Ruby dependencies
+/target               # Rust build output
+
+# -----------------------------------------------------------------------------
+# Build/Runtime/Compilation Files
+# -----------------------------------------------------------------------------
+*.log
+*.swp                 # Vim swap files
+*~                    # Editor backup files
+bin/                  # Compiled executables (Go, C++, etc.)
+dist/                 # Distribution/build folder (JS, Python, etc.)
+out/                  # General output directory
+.build/               # Build cache
+
+# Go Specific
+*.exe                 # Compiled Windows executables
+*.test                # Go test executables
+*.prof                # Go profiling files
+
+# -----------------------------------------------------------------------------
+# IDE and Editor Files
+# -----------------------------------------------------------------------------
+# VS Code
 .vscode/
-*~
-*.txt
-.env
-.env.test
-bin/
+
+# JetBrains (IntelliJ, GoLand, PyCharm, etc.)
+.idea/
+
+# Vim
+.netrwhist
+
+# -----------------------------------------------------------------------------
+# Environment and Credentials
+# -----------------------------------------------------------------------------
+.env                  # Generic environment configuration
+.env.local            # Local environment configuration
+.env.*.local
+.secret
+credentials.json
